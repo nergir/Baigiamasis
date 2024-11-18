@@ -2,7 +2,7 @@ import sqlite3
 
 import pandas as pd
 
-connection = sqlite3.connect("roger.db")
+connection = sqlite3.connect("c:/ftp/roger/roger.db")
 
 sql = """
 SELECT ID,

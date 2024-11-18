@@ -9,7 +9,7 @@ lithuanian_dict = enchant.Dict("lt_LT")
 pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 
-def text_with_rectangle(image):  # noqa: ANN201
+def text_with_rectangle(image: any) -> any:
     """Test."""
     results = pytesseract.image_to_data(image, lang="lit", output_type=Output.DICT, config="--psm 6")
     for i in range(len(results["text"])):
