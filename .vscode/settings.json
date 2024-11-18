@@ -1,0 +1,27 @@
+{
+    // Set the Python interpreter path to the one where your Odoo dependencies are installed
+    "files.exclude": {
+        "**/*.pyc": {
+            "when": "$(basename).py"
+        },
+        "**/*.pyo": {
+            "when": "$(basename).py"
+        },
+        "**/*.pyd": {
+            "when": "$(basename).py"
+        },
+        "**/__pycache__": true,
+    },
+    "python.terminal.activateEnvironment": true,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "python.defaultInterpreterPath": "${workspaceFolder:name}/env/Scripts/python.exe",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder:name}/env/Lib/site-packages",
+    ],
+    // Optional: Set Pylance type-checking mode to basic for fewer errors
+    "python.analysis.autoImportCompletions": true,
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder:name}/env/Lib/site-packages",
+    ],
+
+}

@@ -1,6 +1,5 @@
 *.zip
 film_directory
-.vscode
 venv
 env
 jpg/*.jpg
