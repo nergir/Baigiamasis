@@ -4,6 +4,7 @@ venv
 env
 jpg/*.jpg
 json/*.json
+png/*.png
 *.db
 roger.db
 file.db
